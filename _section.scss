@@ -1,0 +1,122 @@
+.section {
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem;
+    border-radius: 1rem;
+
+    @media only screen and (max-width: 28.75em) {
+      gap: 6px;
+      padding: 1rem;
+    }
+
+    &--1 {
+      margin-bottom: 2rem;
+    }
+
+    &--2 {
+      margin-bottom: 2rem;
+    }
+    &--3 {
+      margin-bottom: 2rem;
+    }
+
+    &--4 {
+      margin-bottom: 2rem;
+    }
+
+    &--5 {
+      margin-bottom: 2rem;
+
+      position: relative;
+    }
+
+    &--6 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    align-self: flex-start;
+
+    &--unread {
+      height: 3.2rem;
+      width: 3.2rem;
+      fill: $color-primary-1;
+      position: absolute;
+      transform: translateX(-5px) translateY(-2px);
+    }
+    &--2 {
+      width: 5.7rem;
+      height: 5.7rem;
+      position: absolute;
+      right: 2rem;
+      padding: 5px;
+      cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        border-radius: 9px;
+        border: 2px solid $color-neutral-4;
+        transform: scale(1.05);
+        padding: 3px;
+      }
+
+      @media only screen and (max-width: 28.75em) {
+        right: -8px;
+      }
+    }
+  }
+
+  &__text {
+  }
+
+  &__name {
+    &:link,
+    &:visited {
+      font-weight: 800;
+      color: $color-neutral-7;
+      margin-right: 4px;
+      text-decoration: none;
+      transform: all 0.4s;
+
+      @media only screen and (max-width: 28.75em) {
+        margin-right: 1px;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary-2;
+    }
+  }
+
+  &__post {
+    color: $color-neutral-6;
+    font-weight: 800;
+    transition: all 0.4s;
+
+    &:hover {
+      color: $color-primary-2;
+      cursor: pointer;
+    }
+  }
+
+  &__chess {
+    &:link,
+    &:visited {
+      margin-left: 2px;
+      text-decoration: none;
+      color: $color-primary-2;
+      font-weight: 800;
+    }
+  }
+
+  &__period {
+    color: $color-neutral-5;
+  }
+}

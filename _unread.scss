@@ -1,0 +1,12 @@
+.unread {
+  background-color: $color-neutral-2;
+}
+
+.notification {
+  fill: $color-primary-1;
+  // border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  position: absolute;
+}

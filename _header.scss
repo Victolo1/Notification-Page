@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+
+  &__text {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-neutral-6;
+    &:hover {
+      color: $color-primary-2;
+      cursor: pointer;
+    }
+  }
+}
